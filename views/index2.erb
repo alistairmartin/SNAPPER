@@ -1,0 +1,300 @@
+
+
+
+   <!-- Portfolio Grid Section -->
+    <section id="portfolio" class=" no-padding-container">
+        <div class="container no-padding-container" style="width: 100%;">
+
+    
+
+
+            <div class=" index-img-row">
+
+            <% @shuffledphotos_6.each do |photo| %>
+
+            
+
+                <div class="col-sm-2 portfolio-item no-padding">
+                    <a href="#portfolioModal<%= photo['id'] %>" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Image information and such</p>
+                            </div>
+                        </div>
+                        <div class="index-img-loop" style="background-image: url('<%= photo['image_url'] %>');" > </div>
+                       
+                    </a>
+                </div>
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal<%= photo['id'] %>" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 20000;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+                            <div class="index-img-modal-container">
+                            <div class="index-img-modal" >
+                                    <img src="<%= photo['image_url'] %>" alt="">
+                             </div> 
+                            </div>
+                            <h2><%= photo['name'] %></h2>
+                            <hr>
+                            <p><%= photo['description'] %></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+             <% end %>   
+
+
+
+
+
+
+
+<% @shuffledphotos_4.each do |photo| %>
+
+            
+
+                <div class="col-sm-3 portfolio-item no-padding">
+                    <a href="#portfolioModal<%= photo['id'] %>" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Image information and such</p>
+                            </div>
+                        </div>
+                        <div class="index-img-loop" style="background-image: url('<%= photo['image_url'] %>');" > </div>
+                       
+                    </a>
+                </div>
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal<%= photo['id'] %>" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 20000;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+                            <div class="index-img-modal-container">
+                            <div class="index-img-modal" >
+                                    <img src="<%= photo['image_url'] %>" alt="">
+                             </div> 
+                            </div>
+                            <h2><%= photo['name'] %></h2>
+                            <hr>
+                            <p><%= photo['description'] %></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+             <% end %>   
+
+
+
+
+<% @shuffledphotos_3.each do |photo| %>
+
+            
+
+                <div class="col-sm-4 portfolio-item no-padding">
+                    <a href="#portfolioModal<%= photo['id'] %>" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Image information and such</p>
+                            </div>
+                        </div>
+                        <div class="index-img-loop" style="background-image: url('<%= photo['image_url'] %>');" > </div>
+                       
+                    </a>
+                </div>
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal<%= photo['id'] %>" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 20000;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+                            <div class="index-img-modal-container">
+                            <div class="index-img-modal" >
+                                    <img src="<%= photo['image_url'] %>" alt="">
+                             </div> 
+                            </div>
+                            <h2><%= photo['name'] %></h2>
+                            <hr>
+                            <p><%= photo['description'] %></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+             <% end %>   
+
+
+
+<% @shuffledphotos_2.each do |photo| %>
+
+            
+
+                <div class="col-sm-6 portfolio-item no-padding">
+                    <a href="#portfolioModal<%= photo['id'] %>" class="portfolio-link " data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <p>Image information and such</p>
+                            </div>
+                        </div>
+                        <div class="index-img-loop" style="background-image: url('<%= photo['image_url'] %>');" > </div>
+                       
+                    </a>
+                </div>
+
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal<%= photo['id'] %>" tabindex="-1" role="dialog" aria-hidden="true" style="z-index: 20000;">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+                            <div class="index-img-modal-container">
+                            <div class="index-img-modal" >
+                                    <img src="<%= photo['image_url'] %>" alt="">
+                             </div> 
+                            </div>
+                            <h2><%= photo['name'] %></h2>
+                            <hr>
+                            <p><%= photo['description'] %></p>
+                            <ul class="list-inline item-details">
+                                <li>Client:
+                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                                    </strong>
+                                </li>
+                                <li>Date:
+                                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                                    </strong>
+                                </li>
+                                <li>Service:
+                                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                                    </strong>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+             <% end %>   
+
+
+
+
+
+
+
+
+
+
+            </div>
+    </section>        
+
+
+
+
+
+
+
+
+
+ 

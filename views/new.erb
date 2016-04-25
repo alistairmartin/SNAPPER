@@ -1,0 +1,72 @@
+
+
+
+
+
+
+<div class="col-sm-offset-2 col-sm-8 col-sm-offset-2  text-center new-container">
+
+<h1 class="text-center new-title">Upload</h1>
+<hr style="border-top: 2px solid #fff;">
+
+<img src="/img/snappy-01.png" class="img-responsive new-img-fishy animated rubberBand" alt="">
+
+<form action="/photos" method="post">
+
+
+
+
+
+<div class="col-sm-12 new-row">
+  <div class="col-sm-offset-1 col-sm-5 new-label">
+    <label for="">name</label>
+  </div>
+  <div class="col-sm-5 new-name">
+    <input class="new-input" type="text" name="name">
+  </div>
+</div>
+
+
+<div class="col-sm-12 new-row">  
+  <div class="col-sm-offset-1 col-sm-5 new-label">
+    <label for="">image url</label>
+  </div>
+  <div class="col-sm-5 new-name">
+    <input class="new-input" type="text" name="image_url">
+  </div>
+</div>
+
+  
+<div class="col-sm-12 new-row">
+  <div class="col-sm-offset-1 col-sm-5 new-label">
+    <label for="">description</label>
+  </div>
+  <div class="col-sm-5 new-name">
+    <input class="new-input" type="text" name="description">
+  </div>
+</div>
+  
+
+<div class="col-sm-12 new-row">
+  <button class="new-button animated rubberBand">Submit</button>
+  </div>
+</form>
+
+</div>
+
+<% @shuffledphotos_1.each do |photo| %>
+
+<div class="new-background-img" data-url="<%= photo['image_url'] %>">
+</div>
+
+<% end %>
+
+
+<div class="new-background">
+</div>
+
+<div class="new-background-gradient">
+</div>
+
+
+
